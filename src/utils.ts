@@ -22,7 +22,7 @@ export function checkInputs(inputs: context.Inputs): boolean {
     if (inputs.commandList.length > 0) {
         inputs.commandList.forEach((command: string) => {
             if (!checkCommand(command)) {
-                core.setFailed(`your command: ${command} is not correct.`);
+                core.setFailed(`your command is not correct.`);
                 return false;
             }
         });
