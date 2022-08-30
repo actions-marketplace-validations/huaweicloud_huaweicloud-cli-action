@@ -51,11 +51,9 @@ steps:
 
 具体使用样例请见 [huaweicloud-cli-workflow-samples](https://github.com/huaweicloud/huaweicloud-cli-workflow-samples)
 
-## 插件使用的公网域名说明
-```text
-适配 Windows系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-windows-amd64.zip'
-适配 Linux ARM 64位系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-linux-arm64.tar.gz'
-适配 Linux AMD 64位系统的KooCLI下载地址： 'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-linux-amd64.tar.gz'
-适配 MacOS ARM 64位系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-mac-arm64.tar.gz'
-适配 MacOS AMD 64位系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-mac-amd64.tar.gz'
-```
+## Action中使用的公网地址说明
+- 适配 Windows系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-windows-amd64.zip'
+- 适配 Linux ARM 64位系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-linux-arm64.tar.gz'
+- 适配 Linux AMD 64位系统的KooCLI下载地址： 'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-linux-amd64.tar.gz'
+- 适配 MacOS ARM 64位系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-mac-arm64.tar.gz'
+- 适配 MacOS AMD 64位系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-mac-amd64.tar.gz'
