@@ -27,7 +27,7 @@
 | secret_key  | 与访问密钥ID(access_key)结合使用的私有访问密钥，对请求进行加密签名，可标识发送方，并防止请求被修改。建议参照**前置工作**中的步骤2进行设置以加密使用。如果使用了华为云统一鉴权[huaweicloud/auth-action](https://github.com/huaweicloud/auth-action)可以不填写此参数 |  无  |  否  |
 | region  | 默认区域，如cn-north-4。如果使用了华为云统一鉴权[huaweicloud/auth-action](https://github.com/huaweicloud/auth-action)可以不填写此参数 |  cn-north-4  |  否  |
 | command_list | 安装完KooCLI后，想要执行的操作指令，可以添加多条。 | 无 | 否 |
-> 关于参数'region'：在没有添加参数'--cli-region'的操作指令中，会使用这个默认region
+> 关于参数'region'：在没有添加参数'--cli-region'的操作指令中，会使用这个默认region。具体region参数的使用，请参考您要使用的服务允许的[地区和终端节点](https://developer.huaweicloud.com/endpoint)
 
 ## **使用样例:**
 以下action示例片段若无特别说明，均默认使用了华为云统一鉴权[huaweicloud/auth-action](https://github.com/huaweicloud/auth-action)。  
@@ -35,7 +35,7 @@
 ```yaml
 steps:
   - name: Set up KooCLI and List Versions of ECS
-    uses: huaweicloud/huaweicloud-cli-action@v1.0.2
+    uses: huaweicloud/huaweicloud-cli-action@v1.0.3
     with:
       commandList: 'hcloud ECS NovaListVersions'
 ```
@@ -43,7 +43,7 @@ steps:
 ```yaml
 steps:
   - name: Set up KooCLI
-    uses: huaweicloud/huaweicloud-cli-action@v1.0.2
+    uses: huaweicloud/huaweicloud-cli-action@v1.0.3
 
   - name: Show Specific Version Info of ECS by KooCLI
     run: 'hcloud ECS NovaShowVersion --cli-region="cn-north-4" --api_version="v2.1"'
@@ -51,11 +51,9 @@ steps:
 
 具体使用样例请见 [huaweicloud-cli-workflow-samples](https://github.com/huaweicloud/huaweicloud-cli-workflow-samples)
 
-## 插件使用的公网域名说明
-```test
-适配 Windows系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-windows-amd64.zip'
-适配 Linux ARM 64位系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-linux-arm64.tar.gz'
-适配 Linux AMD 64位系统的KooCLI下载地址： 'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-linux-amd64.tar.gz'
-适配 MacOS ARM 64位系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-mac-arm64.tar.gz'
-适配 MacOS AMD 64位系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-mac-amd64.tar.gz'
-```
+## Action中使用的公网地址说明
+- 适配 Windows系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-windows-amd64.zip'
+- 适配 Linux ARM 64位系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-linux-arm64.tar.gz'
+- 适配 Linux AMD 64位系统的KooCLI下载地址： 'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-linux-amd64.tar.gz'
+- 适配 MacOS ARM 64位系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-mac-arm64.tar.gz'
+- 适配 MacOS AMD 64位系统的KooCLI下载地址：'https://hwcloudcli.obs.cn-north-1.myhuaweicloud.com/cli/latest/huaweicloud-cli-mac-amd64.tar.gz'
